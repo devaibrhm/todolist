@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To Do List</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>To Do List</h1>
+
+    <form id="todo-form">
+  <!-- Input Tugas -->
+    <input type="text" id="todo-input" placeholder="Tambah tugas..." required />
+    <input type="time" id="todo-time" required />
+    <input type="date" id="todo-date" required />
+
+  <!-- Tombol Tambah & Hapus -->
+    <div class="form-buttons">
+        <button type="submit">Tambah</button>
+        <button type="button" id="delete-all" class="delete-all-btn">Hapus Semua</button>
+        </div>
+    </form>
+
+
+    <!-- Filter -->
+    <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">Semua</button>
+        <button class="filter-btn" data-filter="completed">Selesai</button>
+        <button class="filter-btn" data-filter="uncompleted">Belum Selesai</button>
+    </div>
+
+    <!-- To Do List -->
+    <ul id="todo-list"></ul>
+  </div>
+
+  <script src="/js/script.js"></script>
+</body>
+</html>

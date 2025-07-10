@@ -1,0 +1,143 @@
+body {
+  font-family: poppins;
+  background: #090040;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.container {
+  background: #471396;
+  padding: 25px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 5px 15px rgb(255, 255, 255);
+  color: #ffffff;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="date"] {
+  flex: 1 1 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px;
+  background-color: #B13BFF;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #dc3545;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+li {
+  background: #ffffff;
+  margin-bottom: 10px;
+  padding: 10px 12px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #000000;
+}
+
+li.completed span {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+li .info {
+  flex: 1;
+}
+
+li .info small {
+  display: block;
+  color: gray;
+  font-size: 0.8em;
+}
+
+li button {
+  background: transparent;
+  border: none;
+  color: red;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.filter {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  gap: 15px;
+}
+
+.filter-btn {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #B13BFF;
+  background-color: white;
+  color: #000000;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background-color: #B13BFF;
+  color: white;
+}
+
+.delete-all-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.delete-all-btn:hover {
+  background-color: #a71d2a;
+}
+
+input[type="time"] {
+  flex: 1 1 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
